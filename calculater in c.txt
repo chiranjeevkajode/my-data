@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+int main()
+{
+    int a,b;
+    int choice;
+    printf("Enter 2 integers:");
+    scanf("%d %d",&a,&b);
+    printf("\nSelect an operation you want to perform:");
+    printf("\n1.Add\n2.Sub\n3.multi\n4.div");
+    printf("\nEnter your choice:");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+        case 1:
+              printf("\nAddition is %d",a+b);
+              break;
+        case 2:
+              printf("\nSubstrect is %d",a-b);
+              break;
+        case 3:
+              printf("\nMultiplicatin is %d",a*b);
+              break;
+        case 4:
+              printf("\nDividation is %f",(float)a/b);
+              break;
+        default:
+              printf("You enterd wrong choice.");
+              
+    }
+    return 0;
+}

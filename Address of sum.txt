@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+
+
+    int i,n,sum=0;
+
+
+    printf("Enter two numbers:");
+    scanf("%d",&n);
+
+    for(i=1;i<=n;i++)
+    {
+
+        sum=sum+i;
+
+    }
+    printf("\nSum=%d",sum);
+    int*p;
+    p=&n;
+    printf("\nAddress of n=%llu",&n);
+    printf("\nContent of p=%llu",p);
+    printf("\n%d %d",n,*p);
+    return 0;
+}
